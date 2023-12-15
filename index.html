@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/512f65f27b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#" data-target="home">Home</a></li>
+                    <li><a href="#" data-target="about">About</a></li>
+                    <li><a href="#" data-target="services">Services</a></li>
+                    <li><a href="#" data-target="portfolio">Portfolio</a></li>
+                    <li><a href="#" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Programmer/Mcdonalds crew</p>
+                <h1> Hi, I'm <span>Regie</span><br>Manallo</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/RegAbout.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi! I'm Regie Manallo, and I am studying at the  Rizal Technology University
+                        and My course Is BSIT I'm currently working as a Chicken Expert Champion at McDonald's, and I'm passionate about creating delicious and satisfying meals for our customers. 
+                        I'm a programmer with a lack of experience in coding and problem-solving. I specialize in Web Development and Programming and I'm comfortable working with languages like and tools such as Java, Python and CSS.                    </p>
+                    <!-- Tabs Section -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Computer programmer</span><br>Creating basic program</li>
+                            <li><span>Web Developer</span><br>Creating a Website</li>
+                            <li><span>Computer trouble shooting</span><br>Basic trouble shooting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Mcdonalds</li>
+                            <li><span>2018 - 2019</span><br>Waiter</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2021/span><br>Rizal Technological University</li>
+                            <li><span>2021-2019</span><br>Sanjuan Senior high school</li>
+                            <li><span>2019-2016</span><br>Sanjuan Junior high school</li>
+                            <li><span>2016-2011</span><br>Kabayanan Elementary school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Computer programmer</h2>
+                    <p>Write and test code for new programs. Programmers work closely with web developers and software developers. They are responsible for writing code for computer programs or mobile apps.
+                        Update existing programs Programmers also create and implement updates for existing programs to improve them.</p>
+                    <a href="#">Learn more</a>
+                </div> 
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>Web Developer</h2>
+                    <p>my Basic skills of being web developer HTML, CSS, and JavaScript for the frontend and PHP or Node.js for the backend. These core web development abilities will provide you with the foundation and rationale required for communicating with programming languages.</p>
+                    <a href="#">Learn more</a>
+                </div> 
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Computer trouble shooting</h2>
+                    <p> I can trouble shoot basic thins in computer like turn it off and fix computer</p>
+                    <a href="#">Learn more</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mcdonals.jpeg.jpg  ">
+                    <div class="layer">
+                        <h3>Mcdonalds</h3>
+                        <p>regcognition being chicken expert in mcdonalds</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mcdonals1.jpeg.jpg">
+                    <div class="layer">
+                        <h3>Mcdonalds</h3>
+                        <p>Champion in mcdonalds ortigas</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/website.jpeg.png">
+                    <div class="layer">
+                        <h3>website</h3>
+                        <p>creating basic website</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="contact-info"><i class="fas fa-paper-plane"></i> manalloregie23@gmail.com</p>
+                    <p class="contact-info"><i class="fas fa-square-phone-flip"></i> 09919246440</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/regie.manallo"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/regiemanallo/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="images/resume_manallo.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name/Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>My personal<i class="fa-solid fa-heart"></i> Website</p>
+    </div>
+
+    <script>
+        var tablinks = document.querySelectorAll("#header ul li a");
+
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].addEventListener("click", function(event) {
+                event.preventDefault();
+
+                var targetId = this.getAttribute("data-target");
+                var targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+                tabcontents[i].classList.remove("active-tab");
+            }
+
+            var selectedTab = document.getElementById(tabname);
+            if (selectedTab) {
+                selectedTab.classList.add("active-tab");
+            }
+
+            for (var i = 0; i < tablinks.length; i++) {
+                if (tablinks[i].innerText.toLowerCase() === tabname.toLowerCase()) {
+                    tablinks[i].classList.add("active-link");
+                    break;
+                }
+            }
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxbAfGM0QowgZ0YQnVKZ4PacPaSgfDG_-CjIDqO9m0-UBoli3s5nsLFz4_OwcIspD1AoA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
